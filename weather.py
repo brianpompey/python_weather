@@ -4,7 +4,7 @@ import time
 
 def getWeather():
     city = textfield.get()
-    api = http://api.openweathermap.org/data/2.5/weather?q=" + city +"&appid={d0c079a626b543e5ad861413e7c1e36e}
+    api = https://api.openweathermap.org/data/2.5/weather?q=" + city +"&appid=2a680c7a58c281fbfcd8d9a2a5dcb921
     json_data = requests.get(api).json()
 
 
