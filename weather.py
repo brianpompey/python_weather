@@ -1,3 +1,4 @@
+import json
 import tkinter as tk
 import requests
 import time
@@ -12,6 +13,8 @@ def getWeather():
     max_temp = json_data['main']['temp_max']
     pressure = json_data['main']['pressure']
     humidity = json_data['main']['humidity']
+    wind = json_data['wind']['speed']
+    sunrise = time.strftime("%I:%M:%S", time.gmtime(json_data['sys']['sunrise']))
     
 
 
