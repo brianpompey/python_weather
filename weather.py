@@ -15,6 +15,7 @@ def getWeather():
     humidity = json_data['main']['humidity']
     wind = json_data['wind']['speed']
     sunrise = time.strftime("%I:%M:%S", time.gmtime(json_data['sys']['sunrise']))
+    sunset = time.strftime("%I:%M:%S", time.gmtime(json_data['sys']['sunset']))
     
 
 
