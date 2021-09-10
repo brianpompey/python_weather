@@ -19,7 +19,8 @@ def getWeather():
 
 
     final_info = condition + "\n" + str(temp) + "°F"
-    
+    final_data = "\n" + "Max Temp: " + str(max_temp) + "\n" + "Min Temp: " + str(min_temp) + "\n" + "Pressure: " + str(pressure)
+    + "\n" + "Humidity: " + str(humidity) + "\n" + "Wind Speed: " + str(wind) + "\n" + "Sunrise: " + sunrise + "\n" + "Sunset: " + sunset
 
 
 canvas = tk.Tk()
