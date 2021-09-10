@@ -4,7 +4,9 @@ import time
 
 def getWeather():
     city = textfield.get()
-    
+    api = http://api.openweathermap.org/data/2.5/weather?q=" + city +"&appid={d0c079a626b543e5ad861413e7c1e36e}
+    json_data = requests.get(api).json()
+
 
 canvas = tk.Tk()
 canvas.geometry("600x500")
