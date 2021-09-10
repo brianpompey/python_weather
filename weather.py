@@ -8,6 +8,8 @@ def getWeather():
     json_data = requests.get(api).json()
     condition = json_data['weather'][0]['main']
     temp = json_data['main']['temp']
+    min_temp = json_data['main']['temp_min']
+    max_temp = json_data['main']['temp_max']
 
 
 canvas = tk.Tk()
