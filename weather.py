@@ -10,6 +10,9 @@ def getWeather():
     temp = json_data['main']['temp']
     min_temp = json_data['main']['temp_min']
     max_temp = json_data['main']['temp_max']
+    pressure = json_data['main']['pressure']
+    humidity = json_data['main']['humidity']
+    
 
 
 canvas = tk.Tk()
