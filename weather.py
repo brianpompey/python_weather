@@ -16,6 +16,9 @@ def getWeather():
     wind = json_data['wind']['speed']
     sunrise = time.strftime("%I:%M:%S", time.gmtime(json_data['sys']['sunrise']))
     sunset = time.strftime("%I:%M:%S", time.gmtime(json_data['sys']['sunset']))
+
+
+    final_info = condition + "\n" + str(temp) + "°F"
     
 
 
